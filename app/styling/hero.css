@@ -1,0 +1,142 @@
+.hero-section {
+  padding: 50px 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Align children to the sides */
+  text-align: center;
+  background: linear-gradient(270deg, #000000 -2.92%, rgba(0, 0, 0, 0) 100%);
+  font-family: 'DM Sans';
+}
+
+.play-button-container {
+  /* Adding a container for play button to manage its position */
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.outer-circle {
+  width: 274px;
+  height: 274px;
+  border-radius: 50%;
+  border: 4px solid #808080;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-circle {
+  width: 121.78px;
+  height: 121.78px;
+  background-color: #FED530;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.play-icon {
+  width: 28.16px;
+  height: 37.56px;
+  fill: #000;
+}
+
+.hero-content-container {
+  /* Adding a container for hero content and search to manage layout */
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+
+
+
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5em;
+}
+
+.hero-content p {
+  font-size: 1rem;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Styles for search container and inputs/buttons */
+.search-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-input,
+.date-input {
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.search-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  background-color: #FED530;
+}
+
+/* Styles for the navbar and body adjusted for fixed navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+body {
+  margin: 0;
+  padding-top: 60px;
+}
+
+/* Add media query if needed for responsiveness */
+@media (max-width: 768px) {
+  /* Adjust styles for mobile view */
+  .hero-section {
+    flex-direction: column;
+    padding: 50px 20px;
+  }
+
+  .play-button-container,
+  .hero-content-container {
+    justify-content: center;
+  }
+
+  .hero-content,
+  .search-container {
+    position: static;
+    transform: none;
+    text-align: center;
+  }
+}

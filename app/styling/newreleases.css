@@ -1,0 +1,32 @@
+.new-releases {
+    color: #fff;
+    padding: 20px;
+    background: linear-gradient(270deg, #000000 -2.92%, rgba(0, 0, 0, 0) 100%);
+    font-family: 'DM Sans';
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .header h2 {
+    font-size: 24px;
+  }
+  
+  .view-more {
+    padding: 10px 20px;
+    background-color: #FED530;
+    border: none;
+    color: #000;
+    cursor: pointer;
+  }
+  
+  .movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* Adjust minmax for card width */
+    grid-gap: 20px;
+  }
+  
