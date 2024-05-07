@@ -41,7 +41,7 @@ body{
     transform: translateX(-50%);
     width: 100%;
     height: 3px;
-    background-color: #FED530; /* Color of the underline */
+    background-color: #FED530;
   }
   
   .navbar-search {
