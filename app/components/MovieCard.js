@@ -1,7 +1,13 @@
 import React from 'react';
 import '../styling/MovieCard.css';
+import "./NewReleases"
 
-const MovieCard = ({ title, views, duration, genre }) => {
+const MovieCard = ({ title, views, duration, genre, del }) => {
+
+  const handleDelete=()=>{
+    del(title)
+  }
+
   return (
     <div className="movie-card">
       <div className="movie-info">
@@ -19,7 +25,9 @@ const MovieCard = ({ title, views, duration, genre }) => {
         </div>
         <h3 className="movie-title">{title}</h3>
         <h3 className="movie-genre">{genre}</h3>
+        
       </div>
+        <button onClick={handleDelete}> delete</button>
     </div>
   );
 };

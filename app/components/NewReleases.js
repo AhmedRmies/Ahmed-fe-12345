@@ -68,6 +68,11 @@ const NewReleases = () => {
         }
     };
 
+    const handleDelete =(title)=>{
+        const updatemovies= movies.filter((movies)=>movies.title !== title)
+        setMovies(updatemovies)
+    }
+
     // Rendering the NewReleases component
     return (
         <div className="new-releases">
@@ -86,6 +91,7 @@ const NewReleases = () => {
                         views={movie.popularity}
                         duration={movie.runtime}
                         genre={movie.genres}
+                        del={handleDelete}
                     />
                 ))}
                 {/* Displaying error if any */}
